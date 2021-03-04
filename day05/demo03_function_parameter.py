@@ -14,13 +14,15 @@ x = 1
 def my_func(y):
     print("memory location of {} is {}".format("y", id(y)))  # y 4329867568
     y = 2
-    print("memory location after changed the value of y", id(y))  # after changed 4558776656
+    print("memory location after changed the value of y",
+          id(y))  # after changed 4558776656
     pass
 
 
 # call my_func()
 print("memory location  of %s is %d" % ("x", int(id(x))))  # x 4329867568
-my_func(x)  # passing variable x to parameter y basically just passed the memory location
+# passing variable x to parameter y basically just passed the memory location
+my_func(x)
 
 # changeable data type, list
 list_a = []
