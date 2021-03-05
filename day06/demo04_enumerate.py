@@ -23,3 +23,19 @@ for index, person in enumerate(list_b, 3):
     # print(person, index)
     print(index, person)
     pass
+
+# function enumerate() with dict
+my_dict = {}
+my_dict["Name"] = "Joey"
+my_dict["Age"] = "23"
+my_dict["Career"] = "Arist"
+print(my_dict)  # {'Name': 'Joey', 'Age': '23', 'Career': 'Arist'}
+
+# for loop to iterate my_dict
+for i in enumerate(my_dict):
+    print(i)
+    pass
+
+# (0, 'Name')
+# (1, 'Age')
+# (2, 'Career')
