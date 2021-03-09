@@ -102,3 +102,9 @@ class Animal:
     def run(self):
         print("%s is running." % self.name)
         pass
+
+
+cat = Animal("white", "mimi", 3)
+cat.run()
+cat.eat()
+print(cat)
