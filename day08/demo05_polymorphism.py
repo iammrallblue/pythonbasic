@@ -14,6 +14,14 @@
         Key point:
             1. polymorphism can increase the program's flexibility
             2. polymorphism can increase the programs' expandability
+
+    Duck Typing,
+        This term comes from the saying “If it walks like a duck, and it quacks like a duck, then it must be a duck.”
+         (There are other variations).
+        Duck typing is a concept related to dynamic typing, where the type
+        or the class of an object is less important than the methods it defines.
+        When you use duck typing, you do not check types at all.
+        Instead, you check for the presence of a given method or attribute.
 """
 # len() is a built in polymorphism
 print(len("Bella"))
