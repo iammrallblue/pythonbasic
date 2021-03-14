@@ -6,7 +6,7 @@
             slice of my_tuple
                 my_type[start:end:step]
         key point:
-            1. Tuple is 4 built-in data type, others List,Set,and Dictionary, all different
+            1. Tuple is one of the  built-in data type, others List,Set,and Dictionary, all different
             2. Tuple is a collection which is ORDERED and UNCHANGEABLE.
             3. Tuples are written with round brackets.
                 ("A" ,"B", "C")
@@ -61,7 +61,7 @@ print(my_tuple[4])
 print(my_tuple)
 
 # important comma for a tuple
-my_tuple2 = (1)  # my_tuple2 will be treated as an int type.
+my_tuple2 = (1)  # my_tuple2 will be treated as an int type. = my_tuple2 = 1
 print(type(my_tuple2))  # <class 'int'>
 
 my_tuple2 = (1,)
@@ -72,4 +72,4 @@ my_tuple3 = tuple(range(10))  # convert a range() to tuple
 print(my_tuple3)  # (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 
 # count(x), to find out many same element in the tuple, x is the element in the tuple
-print(my_tuple3.count(8)) # 1 , there has only one number 8
+print(my_tuple3.count(8))  # 1 , there has only one number 8
