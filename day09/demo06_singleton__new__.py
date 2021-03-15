@@ -1,7 +1,7 @@
 """
     Singleton：
         This pattern restricts the instantiation of a class to one object.
-        It is a type of creational pattern and involves only one class to create methods and specified objects.
+        It is a type of creation pattern and involves only one class to create methods and specified objects.
 
         Key point:
             1. for Singleton object or instance, Usually based on the built in function
@@ -27,14 +27,14 @@ class Singleton:
 
     @staticmethod
     def get_instance():
-        if Singleton.__instance == None:
+        if Singleton.__instance is None:
             Singleton()
             return Singleton.__instance
         pass
 
     # initial constructor
     def __init__(self):
-        if Singleton.__instance != None:
+        if Singleton.__instance is not None:
             raise Exception("This class is Singleton.")
         else:
             Singleton.__instance = self
@@ -42,7 +42,7 @@ class Singleton:
         pass
 
 
-inst = Singleton()
+# inst = Singleton()
 
 inst = Singleton.get_instance()
 print(inst)
