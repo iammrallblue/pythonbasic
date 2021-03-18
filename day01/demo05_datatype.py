@@ -66,6 +66,8 @@ print(type(y))  # result shows y is int type not long type
 # boolean value
 y = True
 print(type(y))  # result <class 'bool'>
+x = 1 == 1
+print(x)
 
 # boolean type
 x = 1
@@ -88,3 +90,7 @@ print(type(list_b))  # <class 'tuple'>
 dict_a = {"name": "John Doe", "age": 35}
 print(dict_a)
 print(type(dict_a))  # <class 'dict'>
+
+# convert  data types to str
+print(str(1))
+print(type(str(1)))  # <class 'str'>

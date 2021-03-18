@@ -28,7 +28,10 @@
                 solution:
                     if some data need to save as other types such as saving age as int
                     age = int(input("Age: "), then can use %d to reserve position for age
-            6 %f, float numeric.
+            6.  %f, float numeric.
+            7. strip()
+                    Removes any leading (spaces at the beginning) and trailing (spaces at the end)
+                    characters (space is the default leading character to remove)
 """
 
 # # input some values
@@ -84,3 +87,11 @@ print("Age: {}".format(user_age))
 print("Gender: {}".format(user_gender))
 print("Student ID: {}".format(stu_id))
 print("Address: {} {}".format(user_address, zip_code))
+
+# strip() function to remove any space from input
+u_name = input("User Name: ").strip()
+if u_name == "root":
+    print("good user")
+    pass
+
+print("wrong input")

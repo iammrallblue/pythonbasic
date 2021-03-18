@@ -21,12 +21,30 @@
                 x = 20
                 here, x can be assigned many different values
                 in different time.
+            5. reserved words
+                import keyword
+                  keyword.wklist
+            6. three characteristics of an object in Python:
+                a) all values have an unique memory hashcode in the memory
+                    i = 3
+                    print(id(i)), show the memory hashcode
+                b) values can be different data types.
+                    i = 3, i is an int type.
+                    pirnt(type(i)) <class 'int'>
+                c) values itself
+                    print(type(10)) <class 'int'>
 """
+import keyword
 
 # how to declare variables
 # int variables x, and y
 x = 3
 print(x)  # 3
+
+# dynamic variable
+y = x
+print(y)  # 3
+
 y = 10
 print(x + y)  # 13
 
@@ -42,3 +60,14 @@ print("Address: " + address)
 # Constant in Python.
 OLD_PEOPLE = "Senior"
 print(OLD_PEOPLE)  # Constant format in Python
+
+# reserved words can not use for variables, methods, classes
+# print(keyword.kwlist, end="\n")
+is_bool = keyword.iskeyword("del")  # return True is keyword
+print(is_bool)
+
+print(id(x))  # 4397353328
+
+print(type(x))
+
+print(type(10))
