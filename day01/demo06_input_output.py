@@ -41,10 +41,10 @@
 # like_weather = input("Do you like rain day.")
 #
 # # show all input information by using % placeholders
-# print("My name is %s, I'm %d old" % (name, age))
+# print("My name is %s, I'm %d years old." % (name, age))
 # # print("Age: ", age)
 # print("Gender: ", gender)
-
+#
 # # format text print out
 # msg = '''
 # --- Personal Info ---

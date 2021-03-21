@@ -14,8 +14,11 @@ while True:
 
     user = input("Enter user name:")
     if user == "root":
-        print("root is user name")
+        print("root, welcome back.")
         break
+        pass
+    elif user == "exit" or user == "Exit":
+        exit()
         pass
     else:
         print(type(user))  # input will always be str type
@@ -26,6 +29,8 @@ while True:
         elif user == " ":
             print("user name can't be SPACE")
             continue
+            pass
+
         print("Finish")
 
 print("out of if statement.")

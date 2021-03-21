@@ -98,7 +98,7 @@ print(x + y < z or x * z > y)  # True
         2. %=, **=, //=
 """
 # =, +=, -=, *=, /=
-# x += y  # equals to x = x + y
+# x += y  # equals to x = x + y == x++
 x **= 10
 print(x)  # 3^10 =59049, x = 59049
 # print("x%d **= 10:" % (x), x)
@@ -124,4 +124,4 @@ print(x is not y)  # True
 # membership Operators (in, not in)
 print("h" in y)  # True
 print("h" not in y)  # False
-print("h,l" in y) # False
+print("h,l" in y)  # False
