@@ -35,7 +35,8 @@
             10. del
                 delete elements from a list
 
-        ***
+        *** in Python 2, range() is a sequence list for generating numbers
+            in Python(2.x). The range() function is used to generate a sequence of numbers.
         ***
 """
 # define an empty list
