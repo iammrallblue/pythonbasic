@@ -13,7 +13,7 @@ import random
             1. while statement can use with else 
                 else, the block of code will run once at the end.
                 when the while statement condition will no longer true
-            2. continue and break ONLY use inside of loop block.
+            2. continue and break ONLY use inside of loop block. 
                 exit()
                 continue
                 break
@@ -36,6 +36,15 @@ import random
         dead loop:
             while True:
 """
+# control while statement
+x = 10
+while x > 5:
+    x -= 1
+    print("while loop", x)
+    pass
+print("x = %d while loop is terminated. " % x)
+pass
+
 # # print 0 ~ 100 by while loop
 # counter = 1  # counter for counting
 # while counter <= 100:

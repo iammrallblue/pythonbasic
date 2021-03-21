@@ -25,6 +25,7 @@
                     convert all letters to lower or upper.
                 9. len()
                     print out the lenth of th string
+                10. split()
 """
 # define a string
 string = "I'm a string."
@@ -88,5 +89,25 @@ print(msg_str[0:3])  # Hel
 print(msg_str[:3])  # Hel
 # reverse iterating from right to left
 print(msg_str[::-1])  # gnikiH olleH
-# the lenth of the string msg_str
+# the length of the string msg_str
 print(len(msg_str))  # length is 12
+
+# a string url address
+str_url = "www.google.com/search"
+
+new_str_url = str_url.split()
+print(new_str_url)  # ['www.google.com/search'] a list
+
+# split the string by  parameter "."
+new_str = str_url.split(".")
+print(new_str)  # ['www', 'google', 'com/search']
+
+# split the string by the default "space"
+str_a = "www google com /search \ndd    "
+print(str_a.split())  # ['www', 'google', 'com', '/search', 'dd']
+print(str_a.split(" "))
+print(str_a.split("  "))
+print(str_a.split("\n"))
+
+# split first element by parameter "."
+print(str_a.split(".", 1))

@@ -23,19 +23,26 @@
 """
 
 # # iterating a string by for loop statement
-slogan = "Bella is my wife."
+slogan = "Bella is my wife."  # "Bella is my wife" is the object of iteration.
 for letter in slogan:
     # print(letter, end=" ") # don't change line
-    print(letter)  # keep all letters in one line
+    print(letter, end=" ")  # keep all letters in one line
     pass
+print()
 
 # # iterating a built-in range() function by for loop statement
 # range(start, end) end can't be zero
 numbers = range(1, 21)  # [1,21)
 for num in numbers:
-    print(num, end=" ")
+    print(num, end=" ")  # print out 1 to 20
     pass
-print("\n", type(range(1)))  # <class 'range'>
+
+print("\n", type(range(1)))  # <class 'range'>, the object of class range.
+
+# int can't be iterated
+# for i in 11324:
+#     print(i) # TypeError: 'int' object is not iterable
+#     pass
 
 # # printing the sum of numbers from 1 to 100,
 # total = 0
@@ -114,3 +121,7 @@ for i in range(3):  # 3 attempts for login
 else:
     print("you have attempted 3 times. try again 3 minutes later")
     pass
+
+# for loop print out Even numbers
+for i in range(0, 10, 2):  # [0,10), [include 0, not include 10), 2 is step by 2
+    print(i)
