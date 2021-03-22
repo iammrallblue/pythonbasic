@@ -16,6 +16,7 @@
                     the original element is boolean type,
                     modified type can be any types.
             5. determine the length of a list by len()
+            6. list can be nested, called nested lists
         common functions/methods:
             1. append()
                 add an element to the tail of sequence list
@@ -32,8 +33,14 @@
                 delete an element in the specified index
             8. reverse()
             9. sort()
+                method sorts the list ascending by default.
             10. del
                 delete elements from a list
+            11. set()
+            12. list()
+            13. in statement, with if statement to determine whether element existed or not
+            14. join(), return a new string contained all elements from the list
+                the list will be joined which can't have int, nested lists, boolean values (True and False)
 
         *** in Python 2, range() is a sequence list for generating numbers
             in Python(2.x). The range() function is used to generate a sequence of numbers.
@@ -44,17 +51,31 @@ list_a = []  # empty list.
 print(type(list_a))  # <class 'list'>
 
 # define a list
-list_a = [1.23, 1, "Bella", True, False]  # elements can be different types.
+list_a = [1.23, 1, "Bella", True, False, "Hello", "USB"]  # elements can be different types.
 # find the length of list by len()
-print(len(list_a))  # 5
-print(list_a)  # [1.23, 1, 'Bella', True, False]
+print(len(list_a))  # 7
+print(list_a)  # [1.23, 1, 'Bella', True, False, 'Hello', 'USB']
 
 # get a slice of the list
 print(list_a[1:3])  # [1, 'Bella'], (1,3]
-print(list_a[2:])  # ['Bella', True, False]
+print(list_a[2:])  # ['Bella', True, False, 'Hello', 'USB']
 
-# print out in a reverse order.
-print(list_a[::-1])  # [False, True, 'Bella', 1, 1.23]
+# change element of the sublist
+list_num = [1, 2, 3, 4, 5]
+slice_num = list_num[2:4]
+print(slice_num)  # [3, 4]
+list_num[-1] = "Bella"  # can be any types
+print(list_num)
+list_num[3:5] = [[999, 9999]]
+print(list_num)
+
+# print out in a reverse order. (2 methods)
+print(list_a[::-1])  # ['USB', 'Hello', False, True, 'Bella', 1, 1.23]
+list_fruit = ["Durian", "Cherry", "Mango", "Papaya", "Apple", "Peach"]
+list_fruit.sort(reverse=True)
+print(list_fruit)  # ['Peach', 'Papaya', 'Mango', 'Durian', 'Cherry', 'Apple']
+# print(list_fruit[::-1]) #['Peach', 'Apple', 'Papaya', 'Mango', 'Cherry', 'Durian']
+
 
 # print out more than one time
 print(list_a * 3)  # multiple times print out list
@@ -113,3 +134,38 @@ print("the index is: ", ind)  # 10
 ind_2 = list_b.index(22, 1, 10)
 print("the index is: ", ind_2)
 
+str_hello = "Hello"
+list_c = list(str_hello)
+print(list_c)  # a list, ['H', 'e', 'l', 'l', 'o']
+for i in list_c:
+    print(i, end=" ")  # H e l l o
+    pass
+print()
+
+# nested lists
+list_numbers = [["one", "two", "three"], "Abby", "Bella", "Cathy", "Danielle"]
+# NOTICE: ["one", "two", "three"] is the first element of list_numbers
+print(type(list_numbers))
+first_of_first_element = list_numbers[0][0]
+print(first_of_first_element)  # one
+
+# if and in statements in a list
+if "Abby" in list_numbers:
+    print("yes")  # yes
+    pass
+else:
+    print("none")
+    pass
+
+# join()
+list_to_string = ["new", "old", "middle"]
+new_string = ",".join(list_to_string)
+print(new_string)
+
+# sort() and sort(reverse=True)
+temp_list = ["c", "l", "d", "i", "z", "m", "a", "w", "h", "k"]
+temp_list.sort()
+print(temp_list)  # ['a', 'c', 'd', 'h', 'i', 'k', 'l', 'm', 'w', 'z']
+temp_list_2 = ["c", "l", "d", "i", "z", "m", "a", "w", "h", "k"]
+temp_list_2.sort(reverse=True)
+print(temp_list_2)  # ['z', 'w', 'm', 'l', 'k', 'i', 'h', 'd', 'c', 'a']
