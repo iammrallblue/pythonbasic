@@ -1,6 +1,6 @@
 """
     Text Sequence Type:
-        str:
+        class str: <class 'str'>
             Common methods/functions:
                 1. capitalize()
                     Return a copy of the string with its first character capitalized and the rest lowercased.
@@ -19,13 +19,21 @@
                     the diff of find(), and index(),if did not contain substring, find() returns -1
                     and index() returns an exception.
                 7. startswith(), endswith()
-                    return the boolean value True and Fals if prefix and suffix are contained
+                    return the boolean value True and False if prefix and suffix are contained
                     the specific character.
+                        ONLY working with the str and tuple of str
                 8. lower() and upper()
                     convert all letters to lower or upper.
                 9. len()
                     print out the lenth of th string
                 10. split()
+                11. rsplit()
+            instance:
+                msg_str = "Hello Hiking"
+                reversed_str = "gnikiH olleH"
+                                123456789
+                new_str = msg_str[::-2], step is -2, from the right to left
+                        = gii le
 """
 # define a string
 string = "I'm a string."
@@ -36,23 +44,25 @@ print("letter in the string. %s" % string[4])
 
 # iterating a string by for loop
 for letters in string:
-    print(letters, end="  ")
+    print(letters, end="  ")  # I  '  m     a     s  t  r  i  n  g  .
     pass
 
 # function capitalize()
 string = "beautiful"
-print("\n capitalize a string word %s to: %s" % (string, string.capitalize()))
+print("\nCapitalize a string word %s to: %s" % (string, string.capitalize()))
 pass
 
 # function strip(), to get rid of empty space in a string
 string = "    beautiful soul    "
 no_space_string = string.strip()
-print("the original string word: ", string)
-print("after calling strip() function: ", no_space_string)
+print("The original string word: ", string)
+print("After calling strip() function: ", no_space_string)
 # function lstrip() , to get rid of empty space on the left side of string
 string = "     hiking day     "
 print(string.lstrip())  # eliminate empty space on the left
 print(string.rstrip())  # eliminate empty space on the right
+string = "Hello"
+print(string.strip("H"))  # get rid of the letter "H", result ello
 
 # copy string, is just assign the same memory address to the new string variable.
 copy_string = string
@@ -74,6 +84,10 @@ wordStr_2 = "Today is hiking day."
 print(wordStr_2.startswith("t"))  # False,
 print(wordStr_2.endswith("."))  # True
 
+# Typeerror
+# int_str = "1234"
+# print(int_str.startswith(1))  # TypeError: startswith first arg must be str or a tuple of str, not int
+
 # function lower() and upper()
 print(wordStr_2.lower())  # today is hiking day.
 print(wordStr_2.upper())  # TODAY IS HIKING DAY.
@@ -91,6 +105,9 @@ print(msg_str[:3])  # Hel
 print(msg_str[::-1])  # gnikiH olleH
 # the length of the string msg_str
 print(len(msg_str))  # length is 12
+
+# reversely print a string by step -2
+print(msg_str[::-2])  # gii le
 
 # a string url address
 str_url = "www.google.com/search"
@@ -111,3 +128,18 @@ print(str_a.split("\n"))
 
 # split first element by parameter "."
 print(str_a.split(".", 1))
+
+print(str_a.rsplit(" ", 1))
+print(type(str_a.split()))  # <class 'list'> return a list.
+
+first, *rest = str_url.split(".")
+print("First part is: ", first)  # www
+# by slice[]
+slice_str = str_url[:3]
+print("by slice: ", slice_str)
+
+print("Rest part is: ", *rest)  # how all elements in the list
+print("The list of rest part: ", rest)  # ['google', 'com/search']
+
+# split() function is to get part of text from the original
+part_str = str_url.split(",")
