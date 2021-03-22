@@ -11,6 +11,7 @@
             3. Tuples are written with round brackets.
                 ("A" ,"B", "C")
             4. A tuple can store many different data type, include list.
+                ** nested list as an element of a tuple
             5. since tuple is unchangeable, can add,del, and reorder.
                 ONLY query, search...
             6. the comma which is after every element in the tuple can determine
@@ -20,6 +21,12 @@
             1. count()
             2. index()
 
+        Pros:
+            1. save memory space
+            2. the element of the tuple is unchangeable
+            3. the tuple can be used as keys of the dict
+            4. the parameter of function passing in the tuple form.
+            5. in particular situation, tuple can replace the object of class ????
 """
 # define an empty tuple
 my_tuple = ()  # ()

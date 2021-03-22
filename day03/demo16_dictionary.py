@@ -4,7 +4,7 @@
         it's not a sequence, it is unordered key: value pairs.
         format:
             my_dict = {"a":"A", "b":"B"}
-            thisdict = {
+            this_dict = {
               "brand": "Ford",
               "model": "Mustang",
               "year": 1964
@@ -37,6 +37,8 @@
             9. keyword in
                 to determine whether elements in the dict or not
                 return True, False
+            10. hash()
+                    Return the hash value for the given object.
 
 """
 # define an empty dict
@@ -111,3 +113,8 @@ print(sorted(my_dict.items(), key=lambda d: d[1]))  # 1 == value, reordered.
 
 # find element by in keyword
 print("Phone" in my_dict)  # True
+
+# hash() function
+print(hash(True))  # 1
+print(hash(100))
+# print(hash([1])) # TypeError: unhashable type: 'list'
