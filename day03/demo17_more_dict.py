@@ -77,3 +77,6 @@ print(my_dict3)  # {'a': '1', 'b': 'Bella', 'list': []}
 # # add elements to the list in my_dict3
 add_elem = my_dict3.setdefault("list", []).append(1)
 print(my_dict3)  # {'a': '1', 'b': 'Bella', 'list': [1]}
+
+listAsValue = []
+print(type(listAsValue))  # <class 'list'>
