@@ -1,0 +1,16 @@
+symbol: BOTBTC
+baseCoin: BOT
+quoteCoin: BTC
+baseAccountNormal: 201145
+baseAccountLock: 202145
+quoteAccountNormal: 201101
+quoteAccountLock: 202101
+sysUid: 1
+sysBaseAccount: 101121
+sysQuoteAccount: 101122
+feeCoin: YLB
+useFeeCoin: false
+feeAccountNormal: 201109
+sysFeeAccount: 101123
+useFeeByAward: false
+feeAccountAward: 206109

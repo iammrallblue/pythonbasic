@@ -1,0 +1,16 @@
+symbol: QTUMUSDT
+baseCoin: QTUM
+quoteCoin: USDT
+baseAccountNormal: 201143
+baseAccountLock: 202143
+quoteAccountNormal: 201106
+quoteAccountLock: 202106
+sysUid: 1
+sysBaseAccount: 101360
+sysQuoteAccount: 101361
+feeCoin: YLB
+useFeeCoin: false
+feeAccountNormal: 201109
+sysFeeAccount: 101362
+useFeeByAward: false
+feeAccountAward: 206109

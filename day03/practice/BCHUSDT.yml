@@ -1,0 +1,16 @@
+symbol: BCHUSDT
+baseCoin: BCH
+quoteCoin: USDT
+baseAccountNormal: 201104
+baseAccountLock: 202104
+quoteAccountNormal: 201106
+quoteAccountLock: 202106
+sysUid: 1
+sysBaseAccount: 101015
+sysQuoteAccount: 101016
+feeCoin: YLB
+useFeeCoin: false
+feeAccountNormal: 201109
+sysFeeAccount: 101025
+useFeeByAward: false
+feeAccountAward: 206109

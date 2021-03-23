@@ -1,0 +1,16 @@
+symbol: ETHBTC
+baseCoin: ETH
+quoteCoin: BTC
+baseAccountNormal: 201102
+baseAccountLock: 202102
+quoteAccountNormal: 201101
+quoteAccountLock: 202101
+sysUid: 1
+sysBaseAccount: 101011
+sysQuoteAccount: 101012
+feeCoin: YLB
+useFeeCoin: false
+feeAccountNormal: 201109
+sysFeeAccount: 101023
+useFeeByAward: false
+feeAccountAward: 206109
