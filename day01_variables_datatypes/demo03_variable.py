@@ -30,9 +30,18 @@
                     print(id(i)), show the memory hashcode
                 b) values can be different data types.
                     i = 3, i is an int type.
-                    pirnt(type(i)) <class 'int'>
+                    print(type(i)) <class 'int'>
                 c) values itself
                     print(type(10)) <class 'int'>
+            7. type() function:
+                    type() method returns class type of the argument(object) passed as parameter.
+                    type() function is mostly used for debugging purposes.
+            8. Some builtin functions can convert data types.
+                int(),
+                float()
+                str()
+                chr()
+                ord()
 """
 import keyword
 
@@ -71,3 +80,21 @@ print(id(x))  # 4397353328
 print(type(x))
 
 print(type(10))
+
+# type() function, return the class tyep of parameters
+a = 100
+b = 12.345
+c = 1 + 5j
+d = 'hello, world'
+e = True
+print(type(a))  # <class 'int'>
+print(type(b))  # <class 'float'>
+print(type(c))  # <class 'complex'>
+print(type(d))  # <class 'str'>
+print(type(e))  # <class 'bool'>
+
+# builtin functions, int(), float(), str(), chr(), ord()
+x = int(input("Value will convert to int: "))
+print("x is int: ", x)
+y = float(input("Value will convert to float: "))
+print("y is float: ", y)
