@@ -3,12 +3,14 @@
         A function is a block of code which only runs when it is called.
         You can pass data, known as parameters, into a function.
         A function can return data as a result.
-        format:
+
+        Syntax:
             def functionName(parameters):
                 code block
                 ...
                 pass
-        parameter and argument:
+
+        Parameter and Argument:
             From a function's perspective:
             A parameter is the variable listed inside the parentheses in the function definition. aka (formal parameter)
             An argument is the value that is sent to the function when it is called. aka (Actual parameter)
@@ -49,6 +51,7 @@
                             sum(1,2), 1,2 are actual parameter, they are assigned memory allocation.
                         3. a parameterized function MUST assign actual parameter when it is called.
                             unless the parameters have default values.
+                        4. a function can return many values, they will return in the tuple form.
                 Argument, aka actual parameter
 """
 
@@ -90,6 +93,16 @@ def summation(x, y):
     print(result)
     pass
 
+
+# a function can assign to a variable
+def my_func():
+    value = 1 + 2
+    return value
+    pass
+
+
+total = my_func()
+print("total of the function:", total)
 
 # call function sum(), actual parameter,
 summation(1, 2)  # 1, 2 are called actual parameter,
@@ -139,7 +152,6 @@ def greet(*names):
 # call function greet(), pass a tuple into.
 greet("Abby", "Bella", "Cathy", "Danielle", "Eva")
 
-
 # call sum_numbers() function
 sum_numbers(1)
 sum_numbers(1, 2, 3)
@@ -179,3 +191,31 @@ complex_function()
 
 complex_function(1, 2, 3, 4, 5, name="Cathy")
 complex_function(age=18)
+
+
+# a function have multiple return values
+def my_function():
+    sum_value = 1 + 2
+    stu_name = "Bella"
+    stu_age = 17
+    return sum_value, stu_name, stu_age
+
+
+return_values = my_function()
+print(return_values)
+print(type(return_values))  # <class 'tuple'>, (3, 'Bella', 17)
+
+
+# a function can have return values like list, dict, and tuple
+def my_function2():
+    expr_number = 1 + 2
+    stu_name = "Bella"
+    stu_age = 17
+    return expr_number, stu_name, stu_age, 90, [100, ], {"A": 100}, (1, 2, 3)
+
+
+# if only need to show first three elements in the list
+number, name, age, *list_a = my_function2()
+print(number, name, age)  # 3, Bella, 17
+print(list_a)  # print out the list [90, [100], {'A': 100}, (1, 2, 3)]
+print(*list_a)  # print out all values in the list. 90 [100] {'A': 100} (1, 2, 3)
