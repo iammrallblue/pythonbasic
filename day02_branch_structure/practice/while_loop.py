@@ -9,6 +9,7 @@ import random
 
 random_number = random.randint(0, 100)
 counter = 0
+print(random_number)
 while True:
     counter += 1
     guessing_number = int(input("Guessing Number: "))
@@ -27,3 +28,11 @@ if counter > 7:
     print("Too many attempts")
     pass
 
+# reverse an integer
+number = int(input("input an integer: "))
+reverse_number = 0
+while number > 0:
+    reverse_number = reverse_number * 10 + number % 10
+    number //= 10
+    pass
+print(reverse_number)
