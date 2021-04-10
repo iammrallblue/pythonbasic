@@ -24,4 +24,3 @@ def call_func():
 
 
 # call function call_func()
-call_func()
