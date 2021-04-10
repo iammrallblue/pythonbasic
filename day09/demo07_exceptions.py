@@ -40,6 +40,7 @@ class TryExcept:
         print("0 is superman")
     finally:
         print("the try except is terminated.")
+
         pass
 
     # catch list errors by try... except
