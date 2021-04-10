@@ -110,22 +110,22 @@ import math
 #             print("Chick: ", z)
 #             pass
 
-# Fibonacci Sequence
-fi_sequence = [1, 1]  # <class 'list'>
-print(type(fi_sequence))
-while len(fi_sequence) < 20:
-    fi_sequence.append(fi_sequence[-1] + fi_sequence[-2])
-    pass
-print(fi_sequence)
-print(len(fi_sequence))
-
-# Fibonacci Sequence 2
-x = 0
-y = 1
-for i in range(20):
-    x, y = y, x + y
-    print(x, end=" ")
-    pass
+# # Fibonacci Sequence
+# fi_sequence = [1, 1]  # <class 'list'>
+# print(type(fi_sequence))
+# while len(fi_sequence) < 20:
+#     fi_sequence.append(fi_sequence[-1] + fi_sequence[-2])
+#     pass
+# print(fi_sequence)
+# print(len(fi_sequence))
+#
+# # Fibonacci Sequence 2
+# x = 0
+# y = 1
+# for i in range(20):
+#     x, y = y, x + y
+#     print(x, end=" ")
+#     pass
 
 
 # Perfect number within 10000
@@ -141,25 +141,61 @@ for i in range(20):
 #         number_list.append(i)
 #         print(perfect_number)
 
-# Perfect number list
+# # Perfect number list
+# # define numbers function
+# def numbers(number):
+#     numbers_sum = 0
+#     number_list = list()  # <class 'list'>
+#
+#     for x in range(1, number):  # range(1,6)
+#         if number % x == 0:
+#             number_list.append(x)
+#         else:
+#             continue
+#     for y in number_list:
+#         numbers_sum += y
+#     if numbers_sum == number:
+#         print(number)
+#
+#
+# for z in range(6, 10000):
+#     numbers(z)
 
-def numbers(number):
-    sum = 0
-    d = list()  # <class 'list'>
+# # find prime numbers
+# value = 2
+# while value < 100:
+#     x = 2
+#     while x <= (value / x):
+#         if value % x == 0:
+#             break
+#             pass
+#         x = x + 1
+#     if x > value / x:
+#         print(value, "is a prime number")
+#         pass
+#     value = value + 1
+# print("prime numbers from 0 to 100")
 
-    for i in range(1, number):  # range(1,6)
-        if number % i == 0:
-            d.append(i)
-        else:
-            continue
-    for i in d:
-        sum += i
-    if sum == number:
-        print(number)
+# # find all prime number solution 2
+# numbers = range(2, 101)  # <class 'range'>
+# for x in range(2, 101):
+#     for y in range(2, 101):
+#         result = x * y
+#         pass
+#     if result < 101:
+#         if numbers.count(result) > 0:
+#             numbers.remove(result)
+#
+# temp = ""
+# for z in numbers:
+#     temp += " " + str(z)
+#     pass
+# print(temp)
 
-
-for i in range(6, 10000):
-    numbers(i)
-
-
-# find prime numbers
+# find all prime numbers solution 3
+for i in range(2, 101):
+    for j in range(2, i):
+        if i % j == 0:
+            break
+    else:
+        print(i, end=" ")
