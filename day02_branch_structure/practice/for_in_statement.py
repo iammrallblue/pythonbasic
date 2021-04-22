@@ -192,10 +192,24 @@ import math
 #     pass
 # print(temp)
 
-# find all prime numbers solution 3
-for i in range(2, 101):
-    for j in range(2, i):
-        if i % j == 0:
+# # find all prime numbers solution 3
+# for i in range(2, 101):
+#     for j in range(2, i):
+#         if i % j == 0:
+#             break
+#     else:
+#         print(i, end=" ")
+
+# find all prime numbers solution 4
+number_list = []  # <class 'list'>
+x = 2
+for x in range(2, 100):  # x starts from 2 to 99
+    y = 2
+    for y in range(2, x):  # y starts from 2 to i
+        if x % y == 0:
             break
-    else:
-        print(i, end=" ")
+            pass
+        else:
+            number_list.append(x)
+            pass
+print(number_list)  # print all prime numbers
