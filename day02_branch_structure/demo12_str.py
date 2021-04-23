@@ -25,7 +25,7 @@
                 8. lower() and upper()
                     convert all letters to lower or upper.
                 9. len()
-                    print out the lenth of th string
+                    print out the length of th string
                 10. split()
                 11. rsplit()
             instance:
