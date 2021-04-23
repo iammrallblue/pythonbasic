@@ -1,4 +1,9 @@
 """
+    Key points:
+        1. Comments can be used to explain Python code.
+        2. Comments can be used to make the code more readable.
+        3. Comments can be used to prevent execution when testing code.
+        
     Ways to add comments
         1. single line comment, block comment
             a. block comment

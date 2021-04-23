@@ -61,7 +61,7 @@ print(x + y)  # 13
 name = "Bella"
 age = 19
 height = 170.2
-print("Name: {}".format(name), "Age: %d" % age, "Height: %f" % height)
+print("Name: {}".format(name), "Age: %d" % age, "Height: %.2f" % height)
 
 address = "1101 Elise Ln Georgia"
 print("Address: " + address)
@@ -81,7 +81,7 @@ print(type(x))
 
 print(type(10))
 
-# type() function, return the class tyep of parameters
+# type() function, return the class type of parameters
 a = 100
 b = 12.345
 c = 1 + 5j
@@ -98,3 +98,9 @@ x = int(input("Value will convert to int: "))
 print("x is int: ", x)
 y = float(input("Value will convert to float: "))
 print("y is float: ", y)
+
+# casting, to specify a data type of variable
+i = str(3)  # "3"
+j = int(30)  # 30
+k = float(300)  # 300.00
+# print(i,j,k)

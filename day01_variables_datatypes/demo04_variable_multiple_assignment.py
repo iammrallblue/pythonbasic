@@ -34,3 +34,33 @@ print(type(n))  # <class 'int'>
 print(*m)  # 1,2, show all elements in the list
 print(m)  # [1,2] ,show whole list,
 print(n)  # 3
+
+# unpack a collection, extract a list or tuple,
+fruits = ["apple", "orange", "cherry"]
+print(type(fruits))  # <class 'list'>
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+# unpack a tuple
+cars = ("Tesla", "Audi", "BMW")  # <class 'tuple'>
+print(type(cars))
+(White, Black, Blue) = cars
+print(White)
+print(Black)
+print(Blue)
+
+
+# Using Asterisk* in a tuple
+tea_leaves = ("green tea", "black tea", "motcha tea",
+              "oolong tea", "white tea", "pu-erh tea")
+
+(green, red, *others) = tea_leaves
+
+print(green)  # green tea
+print(red)  # black tea
+# *** it's a list, ['motcha tea', 'oolong tea', 'white tea', 'pu-erh tea']
+print(others)
+# *** all elements in the list, motcha tea oolong tea white tea pu-erh tea
+print(*others)
