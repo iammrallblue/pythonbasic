@@ -88,7 +88,7 @@ print("for loop ended")
 pass
 
 # skipping specified letter by using continue and for loop
-for letters in "Bella is my wife":
+for letters in "Bella is my wife":  # "Bella is my wife" is an iterating object
     if letters == 's':
         continue  # skipping letter "s", keep going
         # break # break out the whole for loop
