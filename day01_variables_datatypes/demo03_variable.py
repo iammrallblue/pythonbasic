@@ -21,9 +21,12 @@
                 x = 20
                 here, x can be assigned many different values
                 in different time.
-            5. reserved words
+            5. reserved words can't use as variable names.
                 import keyword
                   keyword.wklist
+                  ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue',
+                    'def', 'del','elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in',
+                    'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
             6. three characteristics of an object in Python:
                 a) all values have an unique memory hashcode in the memory
                     i = 3
@@ -45,7 +48,7 @@
 """
 import keyword
 
-# how to declare variables
+# how to declare variable
 # int variables x, and y
 x = 3
 print(x)  # 3
@@ -71,7 +74,7 @@ OLD_PEOPLE = "Senior"
 print(OLD_PEOPLE)  # Constant format in Python
 
 # reserved words can not use for variables, methods, classes
-# print(keyword.kwlist, end="\n")
+print(keyword.kwlist, end="\n")  # return a keyword list
 is_bool = keyword.iskeyword("del")  # return True is keyword
 print(is_bool)
 
@@ -92,15 +95,16 @@ print(type(b))  # <class 'float'>
 print(type(c))  # <class 'complex'>
 print(type(d))  # <class 'str'>
 print(type(e))  # <class 'bool'>
+print("c: ", c)
 
-# builtin functions, int(), float(), str(), chr(), ord()
-x = int(input("Value will convert to int: "))
-print("x is int: ", x)
-y = float(input("Value will convert to float: "))
-print("y is float: ", y)
+# # builtin functions, int(), float(), str(), chr(), ord()
+# x = int(input("Value will convert to int: "))
+# print("x is int: ", x)
+# y = float(input("Value will convert to float: "))
+# print("y is float: ", y)
 
 # casting, to specify a data type of variable
-i = str(3)  # "3"
-j = int(30)  # 30
-k = float(300)  # 300.00
+i = str(3)  # "3" same as i = '3'
+j = int(30)  # 30 same as j = 30
+k = float(300)  # 300.00 same as k = 300.00
 # print(i,j,k)

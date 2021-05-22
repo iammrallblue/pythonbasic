@@ -51,6 +51,10 @@
             1. using function type(),
                 type(variable) to check data type
             2. print(), type() in Python are called functions.
+            e. a string float can not cast to int,
+                int('123.4'), ValueError,
+                int('123'), No Error
+            4. n = 01, error 0 can't be the starting of an int.
 """
 
 # Numeric types: int

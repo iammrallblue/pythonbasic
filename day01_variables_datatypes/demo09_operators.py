@@ -57,6 +57,7 @@ print("floor division: ", flo_div)
 #
 mod_div = y / x
 print("y/x:", mod_div)  # 0.2
+
 """
     Comparison Operators:
         1. ==
@@ -112,6 +113,11 @@ print(1 < x < 10)  # True, both are True
 y = "hello"
 print(y and 1 == 2)
 print(y or 1 == 2)
+
+# print(not y)  # since y is 'hello', result is False
+#
+# y = ""
+# print("====", not y)  # y is "", result is True
 
 print(x > 1 or x < 1)  # True, one of both is True
 

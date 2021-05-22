@@ -15,7 +15,7 @@
         2. if the variables and the values are not equal
             we need to put * in front of the the first variable
             *x,y = 1,2,3
-        3. *x, will come a list[]
+        3. *x, will come a list[] (list data type)
 """
 
 # assign different values to multiple variables

@@ -13,3 +13,12 @@
         8. {}, empty dict
         9. set(), empty collection
 """
+
+is_value = '0'
+print(is_value)  # 0
+print(type(is_value))
+if is_value:
+    print("Yes")
+else:
+    print("No")
+
