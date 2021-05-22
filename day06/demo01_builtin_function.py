@@ -37,6 +37,10 @@ print(round(3.37))  # 3
 # round() to keep one decimal place.
 print(round(3.38, 1))  # 3.4
 
+#
+print(type(round(300.00000004, 2)))
+value = round(300.123454444, 2)
+print(value)
 # pow()
 print(pow(3, 3))  # 27
 # same as
