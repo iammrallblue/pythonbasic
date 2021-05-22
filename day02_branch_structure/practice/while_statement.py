@@ -13,7 +13,7 @@
 
 count = 0
 while count < 3:
-    print("{} attempt(s)".format(count + 1))
+    print("{} attempt(s)".format(count + 1))  # show each attempt.
     user_input = input(">:")
 
     if not user_input:  # input is not integer, print out warning
@@ -32,6 +32,9 @@ while count < 3:
         print("bingo.")
         break
         pass
+    count += 1  # loop condition
+
+    # keep game going, reset count.
     if count == 3:
         print("continue, enter y, exit enter n")
         reset_count = input("input y/Y or n/N:")
@@ -39,4 +42,3 @@ while count < 3:
             count = 0
         else:
             exit()
-    count += 1
