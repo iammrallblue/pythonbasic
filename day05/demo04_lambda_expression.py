@@ -35,6 +35,7 @@ print(add_numbers(1, 2))  # 3
 # def L(x, y): return x+y (Not recommended)
 
 
+# lambda function
 def L(x, y): return x + y
 
 
