@@ -24,7 +24,32 @@ print(type(range(9)))  # <type 'list'>
 #     pass
 # # result: 0 2 4 6 8
 
-for i in range(1, 10, 2):
-    print(i)
-    pass
-# result: 1 3 5 7 9
+# for i in range(1, 10, 2):
+#     print(i)
+#     pass
+# # result: 1 3 5 7 9
+
+# # print out ODD numbers from 1, 21
+# for i in range(1, 21, 2):
+#     print(i)
+#     pass
+
+# # print out EVEN numbers from 100 to 0 reversely
+# for i in range(100, 0, -2):
+#     print(i)
+#     pass
+
+# # calculate the total of some EVEN numbers:
+# total = 0
+# for i in range(2, 20, 2):
+#     total += i
+#     pass
+# print("total is: ", total)
+
+# # calculate the total of some EVEN numbers: (method 2)
+total = 0
+for i in range(2, 20, 2):
+    if i % 2 == 0:
+        total += i
+        pass
+print("total is: ", total)
