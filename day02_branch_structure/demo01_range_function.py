@@ -47,9 +47,10 @@ print(type(range(9)))  # <type 'list'>
 # print("total is: ", total)
 
 # # calculate the total of some EVEN numbers: (method 2)
-total = 0
-for i in range(2, 20, 2):
-    if i % 2 == 0:
-        total += i
-        pass
-print("total is: ", total)
+# total = 0
+# for i in range(2, 20, 2):
+#     if i % 2 == 0:
+#         total += i
+#         pass
+# print("total is: ", total)
+
